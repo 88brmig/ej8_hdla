@@ -1,0 +1,56 @@
+/* # id estilos aplican a 1 solo elemento
+   . class estilos pueden aplicar a varios elementos*/
+   
+:root{
+--naranja:#EB5E0B;
+--azul-menu:#5EAAA8;
+--fondo:#F8F1F1;
+--footer:#A3D2CA;
+--cafe:#993B04;
+--cafeclaro:#B06132;
+--ancho:1024px
+}
+
+#frmAltaActores {
+	padding: 10px 60px 10px 60px;
+	max-width: 250px;
+	margin: 0 auto;
+	background-color: #B5EAD7;
+}
+from input{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	border: none;
+	font-family: Arial;
+	color: #525c66;
+}
+
+.etiqueta{
+	color: #212F3D;
+	font-family: Calibri;
+	margin: 0 auto;
+}
+
+#Guardar {
+	display: block;
+	background-color: #FFADAD;
+	color: white;
+	letter-spacing: 2px
+}
+
+#Cancelar {
+	display: block;
+	background-color: #FFDAC7;
+	color: white;
+	letter-spacing: 2px
+}
+
+#Cancelar:hover{
+	background-color: #E0BEE4;
+}
+#Guardar:hover{
+	background-color: #E0BEE4;
+}
+

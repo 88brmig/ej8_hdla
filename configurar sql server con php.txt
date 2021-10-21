@@ -1,0 +1,33 @@
+Configurar php con SQL Server
+
+1. Verificar servicio de SQL Server arriba
+	Dar de baja MySQL
+	
+2. En Localhost, checar phpInfo
+	checar version php:  7.3.28
+	checar compiler: MSVC15 (Visual C++ 2017)
+	checar Thread Safety: enabled
+	
+3. Driver php con sql server,
+	descargar e instalar, descomprimirlo en una carpeta
+	
+4. Elegir los archivos segun su equipo y
+	copiar a php/ext
+
+5. Dar de baja xampp
+	modificar el archivo php.ini
+	
+[PHP_SQLSRV]
+extension=archivo_segun_equipo.dll
+[PHP_PDO_SQLSRV]
+extension=archivo_segun_equipo.dll
+
+
+Si ni levanta el apache, hay que borrar los
+archivos de php/ext y buscar otros dll,
+repetir el paso 4 y 5
+
+6. Abrir management studio, sakila
+	probar insert
+	
+7. Modificar el codigo de php

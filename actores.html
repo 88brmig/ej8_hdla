@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<!-- Ejercicio 7 enlazar php con sql server -->
+<head>
+	<title> Actores</title>
+	<link rel="stylesheet" href="css/estilo.css"/>
+		<link rel="stylesheet" href="css/formulario.css"/>
+	<meta http-equiv="Content-Type" 
+	content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+<main> Modulo Administrador con SQL Server- Alta Actores
+</main>
+<header>
+	<nav> <!--menu-->
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="catalogo.php">CATALOGO</a></li>
+			<li><a href="actores.html">ACTORES</a></li>
+			<li><a href="">OTROS</a></li>
+		</ul>
+	</nav>
+</header>
+
+	<form id="frmAltaActores"method="post" action="insertActor.php">
+	Registro actor
+	<input type="text" name="nombre" required autofocus
+	placeholder="Nombre" maxlength="20" 
+	onkeyup="javascript:this.value=this.value.toUpperCase();" />
+	<br>
+	<input type="text" name="apellido" placeholder="Apellido" 
+	maxlength="20" 
+	onkeyup="javascript:this.value=this.value.toUpperCase();" />
+	
+	<input type="email" name="correo" placeholder="Correo" 
+	required />
+	<br>
+	<label class="etiqueta">Fecha Nacimiento</label>
+	
+	<input type="date" name="fechaNacimiento" placeholder="Fecha Nacimiento"
+	required value="2000-01-01"/>
+	<br>
+	<label class="etiqueta">Premios Oscar</label>
+	<input type="number" name="oscars" value="0" min="0" max "100"
+	step="1" />
+	
+	<input type="submit" id="Guardar" name="Guardar" value="GUARDAR" />
+	<input type="reset" id="Cancelar" name="Cancelar" value="CANCELAR" 
+	class="boton"/>
+	
+	</form>
+
+
+<footer> Ejemplo para fines educativos &copy Abel Hernandez 
+</footer>
+
+
+</body>
+</html>

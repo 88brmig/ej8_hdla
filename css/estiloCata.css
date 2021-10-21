@@ -1,0 +1,91 @@
+:root{
+	--fondo: #FFDAC7;
+	--logo: #FFEFBC;
+	--menu: #FDCAE1;
+	--seccion: #84B6F4;
+	--propaganda: #FDFD96
+}
+*{
+	padding:0;
+	margin:0;
+}
+/*
+rosa FFADAD
+rosa claro FFDAC7 ya
+otro rosa FDCAE1 ya 
+amarillo FFEFBC ya 
+amarillo claro FFFEB7
+azul pastel 84B6F4 ya 
+amarillo llamativo FDFD96 ya 
+
+*/
+body{
+	background-color: var(--fondo);
+}
+main{
+	width:940px;
+	height:40px;
+	background-color:var(--logo);
+}
+header{
+	width:940px;
+	height:60px;
+	background-color:pink;
+	text-align:center;
+	margin-top:5px;
+}
+header nav{
+	width: 940px;
+	height: 40px;
+	background-color:var(--menu);
+	
+}
+header nav ul li{
+	display: inline-block;
+	padding: 8px;
+
+}
+header nav ul li a{
+	text-decoration: none;
+	font-family: Courier New;
+	font-size: 18px;
+	font-weight:bold;
+	color:white;
+}
+
+header nav ul li a:hover{
+	color: DeepPink;
+	background-color:white;
+}
+#principal
+{
+	width: 940px;
+	/*height: 400px;*/
+
+}
+
+#sec2{
+	width: 620px;
+	/*height: 350px;*/
+	background-color: var(--seccion);
+	float:left;
+	margin-top:5px;
+	
+}
+aside{
+	width: 240px;
+	height: 150px;
+	background-color:var(--propaganda);
+	float:left;
+	margin-left:30px;
+	margin-top:10px;
+}
+footer{
+	clear:both; /*es como salto de pagina o de reglon*/
+	width: 940px;
+	height:30px;
+	background-color:#f3a8c2;
+	text-align:center;
+	padding-top:7px;
+}
+
